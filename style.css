@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: dodgerblue;
+  padding: 10px 0;
+}
+div.container {
+  background: white;
+  box-shadow: 1px 1px 10px 4px rgb(125, 119, 119);
+  position: relative;
+  width: 50%;
+  /* padding: 10px 0; */
+  border-radius: 10px;
+  display: grid;
+  gap: 30px;
+}
+header {
+  background: silver;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+header h1 {
+  padding: 10px;
+}
+
+p {
+  font-size: 19px;
+  margin: 0 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+}
+div.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+footer {
+  background: silver;
+  padding: 10px 30px;
+  width: 100%;
+  position: relative;
+  outline: none;
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+div.contact {
+  flex-direction: column;
+  justify-content: center;
+}
+ul {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p.copyright {
+  text-align: center;
+  color: red;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  div.container {
+    width: 90%;
+  }
+  div.circle {
+    width: 120px;
+    height: 120px;
+  }
+}
